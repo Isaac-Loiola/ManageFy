@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ManageFyClass
+namespace ManageFyClass.DAL
 {
     public class Context : DbContext
     {
