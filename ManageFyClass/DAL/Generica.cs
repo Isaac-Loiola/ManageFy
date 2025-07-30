@@ -18,14 +18,17 @@ namespace ManageFyClass.DAL
         public void Adicionar(T objeto)
         {
             contexto.Set<T>().Add(objeto);
+            contexto.SaveChanges();
         }
         public void Listar(T classe)
         {
             contexto.Set<T>().ToList();
+            contexto.SaveChanges();
         }
         public void ObterPor(Func<T, bool> condicao)
         {
             contexto.Set<T>().FirstOrDefault(condicao);
+            contexto.SaveChanges();
         }
     }
 }
