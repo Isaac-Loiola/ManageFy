@@ -13,6 +13,6 @@ namespace ManageFyClass.DAL.DAO
         public double Valor { get; set; }
         public string Tipo { get; set; }
         public DateTime Data { get; set; }
-        public Categoria Categoria { get; set; }
+        public virtual Categoria Categoria { get; set; }
     }
 }
