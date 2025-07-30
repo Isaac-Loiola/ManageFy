@@ -14,5 +14,18 @@ namespace ManageFyClass.DAL
         {
             this.contexto = contexto;
         }
+
+        public void Adicionar(T objeto)
+        {
+            contexto.Set<T>().Add(objeto);
+        }
+        public void Listar(T classe)
+        {
+            contexto.Set<T>().ToList();
+        }
+        public void ObterPor(Func<T, bool> condicao)
+        {
+            contexto.Set<T>().FirstOrDefault(condicao);
+        }
     }
 }
