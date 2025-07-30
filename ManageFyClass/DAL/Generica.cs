@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManageFyClass.DAL
 {
-    class Generico<T> where T : class
+    public class Generico<T> where T : class
     {
         protected readonly Context contexto;
 
