@@ -23,6 +23,9 @@ namespace ManageFyDesk
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            Context context = new();
+
+            Generico<Conta> generico = new(context);
         }
 
         private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)

@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            cmbCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,40 +45,20 @@
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Panel1.SuspendLayout();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel3.SuspendLayout();
             SuspendLayout();
             // 
             // guna2Panel1
             // 
             guna2Panel1.BorderRadius = 10;
-            guna2Panel1.Controls.Add(cmbCategoria);
-            guna2Panel1.CustomizableEdges = customizableEdges3;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.FillColor = Color.White;
             guna2Panel1.Location = new Point(404, 248);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(442, 562);
             guna2Panel1.TabIndex = 0;
-            // 
-            // cmbCategoria
-            // 
-            cmbCategoria.BackColor = Color.Transparent;
-            cmbCategoria.BorderRadius = 10;
-            cmbCategoria.CustomizableEdges = customizableEdges1;
-            cmbCategoria.DrawMode = DrawMode.OwnerDrawFixed;
-            cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbCategoria.FocusedColor = Color.FromArgb(94, 148, 255);
-            cmbCategoria.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cmbCategoria.Font = new Font("Segoe UI", 10F);
-            cmbCategoria.ForeColor = Color.FromArgb(68, 88, 112);
-            cmbCategoria.ItemHeight = 30;
-            cmbCategoria.Location = new Point(139, 21);
-            cmbCategoria.Name = "cmbCategoria";
-            cmbCategoria.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            cmbCategoria.Size = new Size(164, 36);
-            cmbCategoria.TabIndex = 9;
-            cmbCategoria.SelectedIndexChanged += cmbCategoria_SelectedIndexChanged;
             // 
             // guna2Panel3
             // 
@@ -93,11 +72,11 @@
             guna2Panel3.Controls.Add(guna2HtmlLabel3);
             guna2Panel3.Controls.Add(guna2HtmlLabel2);
             guna2Panel3.Controls.Add(guna2HtmlLabel1);
-            guna2Panel3.CustomizableEdges = customizableEdges5;
+            guna2Panel3.CustomizableEdges = customizableEdges3;
             guna2Panel3.FillColor = Color.White;
             guna2Panel3.Location = new Point(404, 39);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel3.Size = new Size(442, 157);
             guna2Panel3.TabIndex = 0;
             // 
@@ -200,6 +179,22 @@
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Olá Usuario!";
             // 
+            // guna2Button1
+            // 
+            guna2Button1.CustomizableEdges = customizableEdges5;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(394, 202);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button1.Size = new Size(180, 45);
+            guna2Button1.TabIndex = 1;
+            guna2Button1.Text = "guna2Button1";
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -207,12 +202,12 @@
             BackColor = Color.FromArgb(191, 191, 191);
             ClientSize = new Size(1250, 835);
             ControlBox = false;
+            Controls.Add(guna2Button1);
             Controls.Add(guna2Panel3);
             Controls.Add(guna2Panel1);
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Load += FrmPrincipal_Load;
-            guna2Panel1.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
             ResumeLayout(false);
@@ -231,6 +226,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbCategoria;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

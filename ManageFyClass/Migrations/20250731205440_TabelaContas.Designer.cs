@@ -4,6 +4,7 @@ using ManageFyClass.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ManageFyClass.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20250731205440_TabelaContas")]
+    partial class TabelaContas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,7 +59,7 @@ namespace ManageFyClass.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contas");
+                    b.ToTable("Conta");
                 });
 
             modelBuilder.Entity("ManageFyClass.DAL.DAO.Transacao", b =>
@@ -71,7 +74,6 @@ namespace ManageFyClass.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ContaId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Data")
@@ -107,9 +109,7 @@ namespace ManageFyClass.Migrations
 
                     b.HasOne("ManageFyClass.DAL.DAO.Conta", "Conta")
                         .WithMany()
-                        .HasForeignKey("ContaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ContaId");
 
                     b.Navigation("Categoria");
 
