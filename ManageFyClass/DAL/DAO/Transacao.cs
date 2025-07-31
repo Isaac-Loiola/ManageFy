@@ -24,6 +24,7 @@ namespace ManageFyClass.DAL.DAO
         }
 
         public int Id { get; set; }
+        public virtual Conta Conta { get; set; }
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public string Tipo { get; set; }
