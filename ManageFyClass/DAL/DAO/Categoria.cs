@@ -22,6 +22,6 @@ namespace ManageFyClass.DAL.DAO
 
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Tipo { get; set; } // Receita - Dispesa
+        public string Tipo { get; set; } // Recorrente  - variavel
     }
 }
